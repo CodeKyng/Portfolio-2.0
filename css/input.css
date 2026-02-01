@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+background {
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--background-dark) 100%);
+}
+    
