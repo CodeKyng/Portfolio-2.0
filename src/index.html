@@ -9,18 +9,21 @@
 </head>
 
 <body class="bg-[#0f0f0f] text-white">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-9 right-9 p-5 bg-[#337418] shadow-[#5dd62c] shadow-2xl p-2 rounded-full"><img src="../img/up.png" alt="Scroll to top" class="w-10 h-10"></button>
     <nav class="bg-[#202020] bg-opacity-80 flex justify-between items-center p-4 rounded-b-3xl">
-        <img src="../img/logo.png" alt="Logo" class="w-20 h-20 rounded-[50%] border-2 border-white">
+        <img src="../img/logo.png" alt="Logo" class="w-20 h-20 rounded-[50%] border-2 border-[#5dd62c]">
         <h1 class="text-3xl font-bold">Code<span class="text-[#5dd62c]">Kyng</span></h1>
         <ul class="p-5 flex gap-8 text-lg font-semibold">
-            <li><a href="#about.html">About</a></li>
-            <li><a href="#services.html">Services</a></li>
-            <li class="bg-[#5dd62c] p-2 rounded-2xl hover:bg-[#337418] transition duration-300"><a>
-                    href="#contact.html">Contact Me</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li class="bg-[#5dd62c] p-2 px-4 text-[#0f0f0f] rounded-2xl hover:bg-[#337418] transition duration-300"><a
+                    href="#contact">Contact Me</a></li>
         </ul>
     </nav>
-    <div class="flex m-5 items-center justify-around">
-        <div class="background flex flex-col items-center justify-center mt-20 px-4">
+    <div class="flex m-5items-center justify-around">
+        <div class="background flex flex-col items-center justify-center px-4">
             <h4 class="text-xl text-left font-bold mb-6">Welcome to CodeKyng</h4>
             <h2 class="text-3xl text-left font-bold mb-8">Hi, I'm Code<span class="text-[#5dd62c]">Kyng</span>, <br>A
                 passionate developer creating innovative web solutions.</h2>
@@ -41,16 +44,15 @@
                 class="bg-[#5dd62c] text-black font-bold py-3 px-6 rounded-2xl hover:bg-[#337418] transition duration-300">Explore
                 Our Services</a>
         </div>
-        <div class="bg-[#202020] relative w-2xl h-50 rounded-3xl flex items-center justify-center">
-            <img src="../img/pfp2-removebg-preview.png" alt="Hero Image"
-                class="w-130 h-105 mt-50 rounded-3xl object-cover">
-        </div>
+        <!-- <div class="bg-[#202020] relative w-2xl h-50 rounded-3xl flex items-center justify-center"> -->
+        <img src="../img/retry.png" alt="Hero Image" class="w-150 h-120 mt-50 rounded-3xl object-cover">
     </div>
-    <div class="mx-10 w-fit border-2 border-white mt-50 rounded-2xl">
+    </div>
+    <div id="about" class="mx-10 w-fit border-2 border-[#5dd62c] mt-50 rounded-2xl">
         <h1 class="text-4xl font-bold text-center mt-20 mb-10">About Code<Kyng class="text-[#5dd62c]">Kyng</span></h1>
         <div class="bg-[#202020] bg-opacity-80 p-8 m-10 rounded-3xl">
             <div class="flex items-center gap-2 mb-6">
-                <img src="../img/about.jpg" alt="CodeKyng Logo" class="w-90 h-70 border-2 border-white mr-4">
+                <img src="../img/retry.png" alt="CodeKyng Logo" class="w-90 h-70 border-2 border-white mr-4">
                 <div>
                     <p class="text-lg mb-6">CodeKyng is dedicated to providing exceptional web development services that
                         empower businesses to thrive in the digital landscape. Our team of skilled developers and
@@ -66,10 +68,10 @@
         </div>
 
     </div>
-    <div>
+    <div id="services" class="mx-10 border-2 border-[#5dd62c] mt-50 rounded-2xl">
         <h1 class="text-4xl font-bold text-center mt-20 mb-10">What I Do</h1>
-        <div class="flex justify-around mx-10">
-            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl w-80 text-center">
+        <div class="grid grid-cols-2 lg:grid-cols-3 justify-around mx-10">
+            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl border border-[#5dd62c] w-80 text-center">
                 <img src="../img/browser.png" alt="Responsive Design" class="w-20 h-20 mb-4 mx-auto">
                 <h2 class="text-xl font-bold mb-4">Fully Responsive Websites</h2>
                 <p class="text-sm">I build websites that automatically adjust to fit any screen size — whether it’s a
@@ -78,7 +80,7 @@
                     device they use. A responsive website also improves search engine ranking and keeps users engaged
                     longer.</p>
             </div>
-            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl w-80 text-center">
+            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl border border-[#5dd62c] w-80 text-center">
                 <img src="../img/half-loading.png" alt="Fast-Loading" class="w-20 h-20 mb-4 mx-auto">
                 <h2 class="text-xl font-bold mb-4">Fast-Loading & Performance Optimized</h2>
                 <p class="text-sm">I optimize every website for speed because users leave slow websites.
@@ -90,7 +92,7 @@
                 </ul>
                 A fast website improves user experience, search engine ranking, and conversion rates.</p>
             </div>
-            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl w-80 text-center">
+            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl border border-[#5dd62c] w-80 text-center">
                 <img src="../img/sparkles.png" alt="Clean, Modern & Professional Design" class="w-20 h-20 mb-4 mx-auto">
                 <h2 class="text-xl font-bold mb-4">Clean, Modern & Professional Design</h2>
                 <p class="text-sm">I create websites that look visually appealing and trustworthy.
@@ -105,9 +107,7 @@
                 </ul>
                 A professional design helps your business look credible and reliable to visitors.</p>
             </div>
-        </div>
-        <div class="flex justify-around mx-10">
-            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl w-80 text-center">
+            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl border border-[#5dd62c] w-80 text-center">
                 <img src="../img/snap.png" alt="Easy to Use" class="w-20 h-20 mb-4 mx-auto">
                 <h2 class="text-xl font-bold mb-4">Easy to Use (User-Friendly)</h2>
                 <p class="text-sm">I design websites so visitors can find what they need quickly.
@@ -115,7 +115,7 @@
                     without confusion.
                     When a website is easy to use, people stay longer and are more likely to take action.</p>
             </div>
-            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl w-80 text-center">
+            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl border border-[#5dd62c] w-80 text-center">
                 <img src="../img/hr-group.png" alt="Built to Convert Visitors into Customers"
                     class="w-20 h-20 mb-4 mx-auto">
                 <h2 class="text-xl font-bold mb-4">Built to Convert Visitors into Customers</h2>
@@ -123,9 +123,9 @@
                     business.
                     Every page is designed to guide visitors toward a goal, such as:
                 <ul class="list-disc list-inside justify-items-start">
-                <li>Contacting you</li>
-                <li>Signing up</li>
-                <li>Making a purchase</li>
+                    <li>Contacting you</li>
+                    <li>Signing up</li>
+                    <li>Making a purchase</li>
                 </ul>
                 This is done through:
                 <ul class="list-disc list-inside justify-items-start">
@@ -134,7 +134,7 @@
                     <li>Well-placed content</li>
                 </ul>
             </div>
-            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl w-80 text-center">
+            <div class="bg-[#202020] bg-opacity-80 p-8 m-4 rounded-3xl border border-[#5dd62c] w-80 text-center">
                 <img src="../img/comments-question.png" alt="Why This Matters" class="w-20 h-20 mb-4 mx-auto">
                 <h2 class="text-xl font-bold mb-4">Why This Matters</h2>
                 <p class="text-sm">Your website is often the first impression people have of your business.
@@ -148,11 +148,62 @@
             </div>
         </div>
     </div>
-    <div>
-        <footer class="bg-[#202020] bg-opacity-80 text-center p-4 mt-20 rounded-t-3xl">
-            <p class="text-sm">&copy; 2024 CodeKyng. All rights reserved.</p>
-        </footer>
+    <div id="Portfolio" class="bg-[#202020] bg-opacity-80 rounded-2xl self-center justify-center mt-10 mb-20 mx-10 p-10 border border-[#5dd62c]">
+        <h1 class="text-4xl text-center border-b-2 border-[#5dd62c] pb-2">My <span class="text-[#5dd62c]">Portfolio</span></h1>
+        <div class="grid grid-cols-3 gap-0 justify-around m-10">
+            <div>
+                <h1 class="text-xl font-bold text-center">ROYALMEALS</h1>
+                <img src="../img/port1.png" alt="Portfolio Item 1"
+                    class="w-50 h-50 m-4 rounded-3xl object-cover hover:rotate-2">
+            </div>
+            <div>
+                <h1 class="text-xl font-bold text-center">GAMENEST</h1>
+                <img src="../img/port2.png" alt="Portfolio Item 2"
+                class="w-50 h-50 m-4 rounded-3xl object-cover hover:rotate-2"></div>
+            <div>
+                <h1 class="text-xl font-bold text-center">LOVE CALCULATOR</h1>
+                <img src="../img/port3.png" alt="Portfolio Item 3"
+                class="w-50 h-50 m-4 rounded-3xl object-cover hover:rotate-2"></div>
+            <div>
+                <h1 class="text-xl font-bold text-center">ROYALSTAY</h1>
+                <img src="../img/port4.png" alt="Portfolio Item 4"
+                class="w-50 h-50 m-4 rounded-3xl object-cover hover:rotate-2"></div>
+            <div>
+                <h1 class="text-xl font-bold text-center">TRADELOG</h1>
+                <img src="../img/port5.png" alt="Portfolio Item 5"
+                class="w-50 h-50 m-4 rounded-3xl object-cover hover:rotate-2"></div>
+            <div>
+                <h1 class="text-xl font-bold text-center">FIZZBUZZ</h1>
+                <img src="../img/port6.png" alt="Portfolio Item 6"
+                class="w-50 h-50 m-4 rounded-3xl object-cover hover:rotate-2"></div>
+        </div>
     </div>
+    <div id="clients" class="mx-10 border-2 border-[#5dd62c] mt-50 rounded-2xl">
+        <h1 class="text-4xl font-bold text-center mt-20 mb-10">My <span class="text-[#5dd62c]">Clients</span></h1>
+        <div class="grid grid-cols-2 lg:grid-cols-4 justify-around mx-10">
+            <img src="../img/client1.jpg" alt="Client 1" class="w-60 h-60 m-4 rounded-3xl object-cover hover:scale-105 transition duration-300">
+            <img src="../img/client2.png" alt="Client 2" class="w-60 h-60 m-4 rounded-3xl object-cover hover:scale-105 transition duration-300">
+            <img src="../img/client3.png" alt="Client 3" class="w-60 h-60 m-4 rounded-3xl object-cover hover:scale-105 transition duration-300">
+            <img src="../img/client4.png" alt="Client 4" class="w-60 h-60 m-4 rounded-3xl object-cover hover:scale-105 transition duration-300">
+    </div>
+    <div id="contact" class="mx-10 border-2 border-[#5dd62c] mb-10 rounded-2xl">
+        <h1 class="text-4xl font-bold text-center mt-20 mb-10">Contact <span class="text-[#5dd62c]">Me</span></h1>
+        <div class="bg-[#202020] bg-opacity-80 p-8 m-10 rounded-3xl">
+            <p class="text-lg mb-6">Ready to take your online presence to the next level? Contact me today to discuss
+                your project and how I can help you achieve your goals. Whether you have a specific idea in mind or
+                need guidance on where to start, I'm here to assist you every step of the way.</p>
+            <p class="text-lg mb-6">You can reach me through the following channels:</p>
+            <ul class="list-disc list-inside mb-6">
+                <li>Email: <a href="mailto:contact@codekyng.com" class="text-[#5dd62c] hover:underline">contact@codekyng.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/codekyng" target="_blank" class="text-[#5dd62c] hover:underline">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/codekyng" target="_blank" class="text-[#5dd62c] hover:underline">GitHub Profile</a></li>
+            </ul>
+            <p class="text-lg">I look forward to hearing from you and exploring how we can work together to create something amazing!</p>
+    </div>
+
+   <div class="text-center p-4 mt-10 border-t-2 border-[#5dd62c]">
+        <p class="text-sm">&copy; 2024 CodeKyng. All rights reserved.</p>
+   </div>
 </body>
 
 </html>
